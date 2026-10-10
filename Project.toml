@@ -1,7 +1,7 @@
 name = "PollisTeX"
 uuid = "1a6a96d5-84d0-410a-9647-cfffdb321811"
 authors = ["Antonio Saragga Seabra"]
-version = "0.1.0"
+version = "0.2.0"
 
 [deps]
 Artifacts = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"

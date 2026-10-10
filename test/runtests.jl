@@ -25,4 +25,7 @@ The model is $y = \beta_0 + \beta_1 x + \varepsilon$.
 		@test (r.pdf, r.problems) == (nothing, [PollisTeX.Problem(:error, "bad.tex", 4, "Undefined control sequence")])
 		@test r.log == joinpath(dir, "build", "bad.log")
 	end
+	@testset "warmup" begin
+		@test PollisTeX.warmup() === nothing
+	end
 end

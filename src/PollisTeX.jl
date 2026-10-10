@@ -148,4 +148,41 @@ function compile(file::AbstractString; outdir::AbstractString = dirname(abspath(
 	return Result(succeeded && isfile(pdf) ? pdf : nothing, problems, isfile(log) ? log : nothing, String(take!(output)))
 end
 
+const WARMUP = Dict(
+	"article" => raw"""
+		\documentclass{article}
+		\usepackage{amsmath, amssymb, booktabs, graphicx, xcolor, geometry, hyperref}
+		\begin{document}
+		\section{Warm-up}
+		$\hat\beta = (X^\top X)^{-1} X^\top y$
+		\begin{tabular}{lr}\toprule a & 1 \\ \bottomrule\end{tabular}
+		\end{document}
+		""",
+	"beamer" => raw"""
+		\documentclass{beamer}
+		\usepackage{amsmath, booktabs, graphicx}
+		\begin{document}
+		\begin{frame}{Warm-up}$\hat\beta = (X^\top X)^{-1} X^\top y$\end{frame}
+		\end{document}
+		""",
+)
+
+"""
+	warmup()
+
+Typesets two small documents, an article and beamer slides, so that Tectonic downloads the TeX files most
+documents need (about a minute, once per machine; later compiles take seconds). The progress shows in the
+status bar.
+"""
+function warmup()
+	dir = mktempdir()
+	for (name, source) in WARMUP
+		file = joinpath(dir, "$name.tex")
+		write(file, source)
+		result = compile(file)
+		result.pdf === nothing && error("The $name warm-up did not compile:\n$(result.output)")
+	end
+	return nothing
+end
+
 end

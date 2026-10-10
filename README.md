@@ -29,6 +29,9 @@ error: report.tex:5: Undefined control sequence
 Tectonic runs TeX, BibTeX and makeindex as many times as the document needs. Pass `outdir` to put the PDF and the
 log elsewhere: `compile("report.tex"; outdir = "build")`.
 
+The first compile downloads the TeX files a document needs, about a minute; `PollisTeX.warmup()` does it ahead of
+time with a small article and beamer slides.
+
 To run Tectonic yourself, `tectonic()` returns the path of the program and `PollisTeX.version()` its version:
 
 ```julia
