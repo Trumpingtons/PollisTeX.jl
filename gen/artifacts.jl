@@ -52,6 +52,8 @@ sha256_of(file) = open(io -> bytes2hex(sha256(io)), file)
 function repack(file, build)
 	dir = mktempdir()
 	endswith(file, ".zip") ? run(`unzip -q $file -d $dir`) : run(`tar -xzf $file -C $dir`)
+	# a .zip keeps no permissions, and Julia artifacts give a Windows program the right to run only if it is executable
+	foreach(f -> chmod(joinpath(dir, f), 0o755), filter(endswith(".exe"), readdir(dir)))
 	triplet = replace(build, "-pc-windows-msvc" => "-w64-mingw32", "-unknown-linux-gnu" => "-linux-gnu")
 	tarball = joinpath(OUT, "repacked", "tectonic-$TECTONIC-$triplet.tar.gz")
 	mkpath(dirname(tarball))

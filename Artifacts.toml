@@ -60,10 +60,10 @@ os = "linux"
     url = "https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%400.17.0/tectonic-0.17.0-aarch64-unknown-linux-musl.tar.gz"
 [[tectonic]]
 arch = "x86_64"
-git-tree-sha1 = "047f9612f15f7dd8f480ddfda7f39f9f1726dc4d"
+git-tree-sha1 = "b39ea22cc0bf49a1c070097de56c93f84116eccf"
 lazy = true
 os = "windows"
 
     [[tectonic.download]]
-    sha256 = "8bd86961f9a6692a25cb41a4db0251e98ef26b4e5bb2634d5ab4e459e8101751"
+    sha256 = "154e1ca4fb7c92a8a037e93795fa12c05e39484b00b1d499eb072c1bd7705c7d"
     url = "https://github.com/Trumpingtons/PollisTeX.jl/releases/download/tectonic-0.17.0/tectonic-0.17.0-x86_64-w64-mingw32.tar.gz"
