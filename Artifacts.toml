@@ -1,0 +1,69 @@
+# Tectonic 0.17.0, written by gen/artifacts.jl. Do not edit by hand.
+
+[[tectonic]]
+arch = "aarch64"
+git-tree-sha1 = "d216105b96c4aadff86c116661a65b62bcce8d4d"
+lazy = true
+os = "macos"
+
+    [[tectonic.download]]
+    sha256 = "a3f1cac7c5678f01661a92212f58480ae3b0634115d880dbc59e2953ded45667"
+    url = "https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%400.17.0/tectonic-0.17.0-aarch64-apple-darwin.tar.gz"
+[[tectonic]]
+arch = "x86_64"
+git-tree-sha1 = "999c507afcae9430644bfbe3e266039ccb37310b"
+lazy = true
+os = "macos"
+
+    [[tectonic.download]]
+    sha256 = "7c90ef5b6ddb1eb1937e4337add5237b79338e4b9676459fa91187d24d6cdf80"
+    url = "https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%400.17.0/tectonic-0.17.0-x86_64-apple-darwin.tar.gz"
+[[tectonic]]
+arch = "x86_64"
+git-tree-sha1 = "6456733d65d2cdddb0244601ba898e465bae4157"
+lazy = true
+libc = "glibc"
+os = "linux"
+
+    [[tectonic.download]]
+    sha256 = "e3f5656206b06438d23ef762468c2cdc7795f78533587951d64bba4a692fc833"
+    url = "https://github.com/Trumpingtons/PollisTeX.jl/releases/download/tectonic-0.17.0/tectonic-0.17.0-x86_64-linux-gnu.tar.gz"
+[[tectonic]]
+arch = "x86_64"
+git-tree-sha1 = "c64432df7ec325f6bafe7a058943d5c362cd1a27"
+lazy = true
+libc = "musl"
+os = "linux"
+
+    [[tectonic.download]]
+    sha256 = "8533d07f9ccbd7a65824b9e0459041bca34af1eb33daba48f59215593753a3b7"
+    url = "https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%400.17.0/tectonic-0.17.0-x86_64-unknown-linux-musl.tar.gz"
+[[tectonic]]
+arch = "aarch64"
+git-tree-sha1 = "11217a5a34b9e15d7de529c483b6042d4b83e664"
+lazy = true
+libc = "glibc"
+os = "linux"
+
+    [[tectonic.download]]
+    sha256 = "b10954a95404f3ab2328d2fa59a5ebab8e657f893fab096f98be8db7c0c979b8"
+    url = "https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%400.17.0/tectonic-0.17.0-aarch64-unknown-linux-musl.tar.gz"
+[[tectonic]]
+arch = "aarch64"
+git-tree-sha1 = "11217a5a34b9e15d7de529c483b6042d4b83e664"
+lazy = true
+libc = "musl"
+os = "linux"
+
+    [[tectonic.download]]
+    sha256 = "b10954a95404f3ab2328d2fa59a5ebab8e657f893fab096f98be8db7c0c979b8"
+    url = "https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%400.17.0/tectonic-0.17.0-aarch64-unknown-linux-musl.tar.gz"
+[[tectonic]]
+arch = "x86_64"
+git-tree-sha1 = "047f9612f15f7dd8f480ddfda7f39f9f1726dc4d"
+lazy = true
+os = "windows"
+
+    [[tectonic.download]]
+    sha256 = "8bd86961f9a6692a25cb41a4db0251e98ef26b4e5bb2634d5ab4e459e8101751"
+    url = "https://github.com/Trumpingtons/PollisTeX.jl/releases/download/tectonic-0.17.0/tectonic-0.17.0-x86_64-w64-mingw32.tar.gz"

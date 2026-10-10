@@ -1,0 +1,21 @@
+name = "PollisTeX"
+uuid = "1a6a96d5-84d0-410a-9647-cfffdb321811"
+authors = ["Antonio Saragga Seabra"]
+version = "0.1.0"
+
+[deps]
+Artifacts = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
+Downloads = "f43a241f-c20a-4ad4-852c-f6b1247861c6"
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+ProgressLogging = "33c8b6b6-d38a-422a-b730-caa89a2f386c"
+SHA = "ea8e919c-243c-51af-8825-aaa63cd721ce"
+
+[compat]
+ProgressLogging = "0.1"
+julia = "1.10"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
